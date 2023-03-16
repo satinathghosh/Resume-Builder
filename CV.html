@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <title>
+            Resume Builder
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div class="form-container">
+                <form onsubmit="submitForm(event)">
+                    
+                        <label for="image-url">Image url</label>
+                        <input  type="text" id="image-url">
+                        <br>
+                        <label>Name</label>
+                        <input  type="text" id="name-field">
+                        <br>
+                        <label>Address</label>
+                        <input  type="text" id="address-field">
+                        <br>
+                        <label>Phone Number</label>
+                        <input  type="text" id="phone-field">
+                        <br>
+                        <label>Email</label>
+                        <input  type="text" id="email-field">
+                        <br>
+                        <label>Website</label>
+                        <input type="text" id="website-field">
+                        <br>
+                        <label>Skills</label>
+                        <input  type="text" id="skills-field">
+                        <br>
+                        <label>Objective</label>
+                        <input  type="text" id="objective-field">
+                        <br>
+                        <div id="experience-container-form">
+                            <label>Experience</label>
+                            <button type="button" onclick="addExperienceField()">Add</button>
+                            <input  type="text" class="experience-input-field">
+                        </div>
+                        <br>
+                        <div id="education-container-form">
+                            <label>Education</label>
+                            <button type="button" onclick="addEducationField()">Add</button>
+                            <input  type="text" class="education-input-field">
+                        </div>
+                        <br>
+                    <!-- </fieldset> -->
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+            <div class="resume-container">
+                <div id="resume">
+                    <div class="left-section">
+                        <div class="image-container">
+                            <img src="sati.jpeg">
+                        </div>
+                        <div class="name">
+                            Satinath Ghosh
+                        </div>
+                        <div class="profile-container">
+                            <div class="profile-heading">
+                                <span>Profile</span></div>
+                            <div class="profile-details left-pad">
+                                <div class="key">Address</div>
+                                <div class="value">Burdwan, West Bengal</div>
+                                <div class="key">Phone</div>
+                                <div class="value1">9641489022</div>
+                                <div class="key">Email</div>
+                                <div class="value2">satinathghosh73@gmail.com</div>
+                                <div class="key">Website</div>
+                                <div class="value3">www.satinath.com</div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="skills-container">
+                            <div class="skills-heading">
+                                <span>Skills</span></div>
+                            <div class="skills-details left-pad">
+                                <div class="value">CSS</div>
+                                <div class="value">HTML</div>
+                                <div class="value">Javascript</div>
+                                <div class="value">jquery</div>
+                                <div class="value">bootstrap</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-section">
+                        <div class="object">I'm a self-motivated, reliable, responsible and hard working person. I consider my self as an orderly person. I'm looking forward for my first work experience. I'm pretty confident that I am the best candidate in this opportunity.</div>
+                        <div class="work-experience">
+                            <hr>
+                            <h3 class="work-ex-heading">Work Experience</h3>
+                            <hr>
+                            <div id="experiences-holder">
+                            <div class="work-ex-details">
+                                <div class="company-name">Newton School</div>
+                                <div class="role">Instructor</div>
+                                <div class="project">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                            </div>
+                            <div class="work-ex-details">
+                                <div class="company-name">Newton School</div>
+                                <div class="role">Instructor</div>
+                                <div class="project">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="education">
+                            <hr>
+                            <h3>Education</h3>
+                            <hr>
+                            <div id="education-holder">
+                            <div class="college-details">
+                                <div class="college-name"> RAJ COLLEGE under BURDWAN UNIVERSITY </div>
+                                <div class="degree">B.Com in Accountancy</div>
+                            </div>
+                            <!-- <div class="college-details">
+                                <div class="college-name">The city college of New York</div>
+                                <div class="degree">MS in Computer Science</div>
+                            </div> -->
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            <button style="margin-top: 1%; margin-left: 60%; margin-bottom: 1%; border-radius: 10px;background-color: pink; padding: 8px;" onclick="printPage()">Print Resume</button>
+            </div>
+        </div>
+        
+    </body>
+</html>
